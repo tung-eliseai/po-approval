@@ -16,7 +16,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@elise/design-system': resolve(__dirname, 'node_modules/@elise/design-system'),
+      '@elise/design-system': resolve(__dirname, 'node_modules/@elise/design-system/dist/index.mjs'),
     },
   },
 });
