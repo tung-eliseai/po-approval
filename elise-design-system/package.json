@@ -1,0 +1,44 @@
+{
+  "name": "@elise/design-system",
+  "version": "0.1.0",
+  "description": "Elise UI component library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./tailwind": "./tailwind.config.js"
+  },
+  "files": ["dist", "tailwind.config.js"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17",
+    "@mantine/core": "^5.0.0",
+    "@mantine/hooks": "^5.0.0",
+    "@mantine/notifications": "^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-router-dom": { "optional": true }
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "lodash": "^4.17.21",
+    "react-window": "^1.8.10"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.200",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-window": "^1.8.8",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
