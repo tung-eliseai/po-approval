@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
+        index: resolve(__dirname, 'index.html'),
         po_approval: resolve(__dirname, 'po_approval.html'),
         gl_account: resolve(__dirname, 'gl_account.html'),
         po_detail: resolve(__dirname, 'po_detail.html'),
